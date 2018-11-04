@@ -1,4 +1,4 @@
-﻿# api-help (multi porpuse helpers api via query string) 
+﻿# api-help (multi purpose api helpers via query string) 
  ---
 Usage:
 /api-help?$function_name1=$value1
