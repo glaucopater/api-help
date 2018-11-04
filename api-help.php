@@ -1,6 +1,7 @@
 <?
 error_reporting(E_ALL);
-define __DEFAULT_SEPARATOR__ = ",";
+define("__DEFAULT_SEPARATOR__", ",");
+
 
 /**
  * fromIntToHexfrom 
@@ -55,7 +56,7 @@ if(isset($_REQUEST)) {
     if (is_numeric($result) || is_string($result)){
         echo $result;
     } elseif (is_array($result) === "array") {
-        echo implode(",", $result);
+        echo implode(__DEFAULT_SEPARATOR__, $result);
     }
 }
 
