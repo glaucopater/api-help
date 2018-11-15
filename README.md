@@ -10,3 +10,11 @@ Available APIs:
 * fromIntToHex
 * fromHexListToIntList
 * fromIntListToHexList
+
+Example:
+---
+api-help/api-help.php?api_key=&fromHexListToIntList=FF,FF,FF
+
+Output:
+---
+255,255,255
