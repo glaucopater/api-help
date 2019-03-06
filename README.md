@@ -1,15 +1,44 @@
 ﻿# api-help (multi purpose api helpers via query string) 
  ---
 Usage:
-/api-help?$function_name1=$value1
+/api-help?$method_name1=$value1
 
-Available APIs:
+Available methods:
 ---
 
-* fromHexToInt
-* fromIntToHex
 * fromHexListToIntList
+Given a list of hex values generates the list of corresponding list of decimal values
+
+Example:
+---
+api-help.php?api_key=&fromHexListToIntList=FF,FF,FF
+
+Output:
+---
+255,255,255
+
 * fromIntListToHexList
+Given a list of int values generates the list of corresponding list of hex values
+
+Example:
+---
+api-help.php?api_key=&fromIntListToHexList=255,255,255
+
+Output:
+---
+#ff,#ff,#ff
+
+* fromIntToHex
+Given an int value generates the corresponding hex value
+
+Example:
+---
+api-help.php?api_key=&fromIntToHex=255
+
+Output:
+---
+#ff
+ 
 
 Example:
 ---
@@ -18,3 +47,7 @@ api-help/api-help.php?api_key=&fromHexListToIntList=FF,FF,FF
 Output:
 ---
 255,255,255
+
+DEMO Endpoint
+===
+https://www.rlieh.com/api-help/api-help.php?api_key=&
