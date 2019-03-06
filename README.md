@@ -6,7 +6,8 @@ Usage:
 Available methods:
 ---
 
-* fromHexListToIntList
+fromHexListToIntList
+===
 Given a list of hex values generates the list of corresponding list of decimal values
 
 Example:
@@ -17,7 +18,8 @@ Output:
 ---
 255,255,255
 
-* fromIntListToHexList
+fromIntListToHexList
+===
 Given a list of int values generates the list of corresponding list of hex values
 
 Example:
@@ -28,7 +30,8 @@ Output:
 ---
 #ff,#ff,#ff
 
-* fromIntToHex
+fromIntToHex
+===
 Given an int value generates the corresponding hex value
 
 Example:
@@ -38,15 +41,19 @@ api-help.php?api_key=&fromIntToHex=255
 Output:
 ---
 #ff
- 
+
+fromHexToInt
+===
+Given an hex value generates the corresponding int value
 
 Example:
 ---
-api-help/api-help.php?api_key=&fromHexListToIntList=FF,FF,FF
+api-help.php?api_key=&fromHexToInt=ff
 
 Output:
 ---
-255,255,255
+255
+
 
 DEMO Endpoint
 ===
